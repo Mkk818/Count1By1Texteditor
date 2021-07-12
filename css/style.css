@@ -137,7 +137,7 @@ footer {
 }
 
 /* SP版 */
-@media screen and (max-width:600px) {
+@media screen and (max-width:375px) {
     .logo {
         margin-left: 10px;
     }
