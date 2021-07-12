@@ -1,0 +1,300 @@
+/* 全体 */
+body {
+    color: #343249;
+    background-color: #fcfcfc;
+    font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif;
+}
+
+header,
+footer {
+    background: #aed2cf;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 30px;
+    text-shadow: 2px 2px 2px #707070;
+}
+
+/* メニュー */
+
+/* ハンバーガーメニューボタンをPCで非表示 */
+#btn_check,
+.logo_sp_menu {
+    display: none;
+}
+
+#nav_toggle {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sp_nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+.sp_nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline #343249;
+}
+
+.sp_nav ul li a {
+    text-decoration: none;
+    color: #343249;
+
+}
+
+/* form */
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 800px;
+    box-sizing: border-box;
+}
+
+.linedwrap .codelines .lineno {
+    color: #343249;
+}
+
+.linedwrap {
+    border-radius: 10px;
+}
+
+/* 文字数カウント */
+#input_length {
+    margin: 10px 0 0 0;
+    width: 800px;
+    text-align: right;
+}
+
+/* ファイル保存/コピーボタン */
+.btns {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px 20px 0;
+}
+
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #fcfcfc;
+    text-decoration: none;
+    background-color: #85B1AD;
+    border-bottom: solid 4px #6b908e;
+    box-shadow: 0px 0px 0px 5px #85B1AD;
+    border-radius: 3px;
+    border: dashed 1px #FFF;
+}
+
+
+button:hover {
+    border: dotted 1px #FFF;
+}
+
+#save {
+    margin-right: 30px;
+}
+
+.fas,
+.far {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#copy {
+    margin-left: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 28px 0;
+}
+
+/* SP版 */
+@media screen and (max-width:600px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    /* ハンバーガーメニュー */
+    .openbtn6 {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background: #85B1AD;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px #1f7572;
+    }
+
+    /*ボタン内側*/
+    .openbtn6 span,
+    .openbtn6 span:before,
+    .openbtn6 span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #fff;
+        position: absolute;
+    }
+
+    .openbtn6 span:before {
+        bottom: 8px;
+    }
+
+    .openbtn6 span:after {
+        top: 8px;
+    }
+
+    #btn_check:checked~.openbtn6 span {
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    #btn_check:checked~.openbtn6 span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #btn_check:checked~.openbtn6 span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    #btn_check {
+        display: none;
+    }
+
+    /* メニュー */
+    .sp_nav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 80;
+        background-color: #aed2cf;
+        transition: all 0.8s;
+        opacity: 0.8;
+
+    }
+
+    .logo_sp_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .sp_nav ul {
+        padding: 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sp_nav ul li {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .sp_nav ul li a {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color: #343249;
+        text-decoration: none;
+        padding: 9px 15px 10px 0;
+        position: relative;
+    }
+
+    .nav-line {
+        display: flex;
+        align-items: center;
+        /* 縦位置の調整 */
+        justify-content: center;
+    }
+
+    .nav-line::before,
+    .nav-line::after {
+        content: '';
+        flex-grow: 0.05;
+        /* 余白を分け与える */
+        height: 2px;
+        background: #343249;
+    }
+
+    .nav-line::before {
+        margin-right: 8px;
+    }
+
+    .nav-line::after {
+        margin-left: 8px;
+    }
+
+    #btn_check:checked~.sp_nav {
+        left: 0;
+    }
+
+    .form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input_length {
+        margin-left: -450px;
+    }
+
+    textarea {
+        width: 360px;
+        box-sizing: border-box;
+    }
+
+    .btns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+}

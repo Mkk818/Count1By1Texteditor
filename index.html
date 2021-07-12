@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count 1 by 1 Text Editor</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="css/jquery-linedtextarea.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Count 1 by 1</h1>
+            <h3>Text Editor</h3>
+        </div>
+        <div id="nav_toggle">
+            <input type="checkbox" id="btn_check">
+            <label for="btn_check" class="openbtn6"><span></span></label>
+            <div class="sp_nav">
+                <div class="logo_sp_menu">
+                    <h1>Count 1 by 1</h1>
+                    <h3>Text Editor</h3>
+                </div>
+                <ul>
+                    <li><a href="how_to">
+                            <p class="nav-line">How To</p>
+                            <p>使い方</p>
+                        </a></li>
+                    <li><a href="q&a">
+                            <p class="nav-line">Q & A</p>
+                            <p>よくある質問</p>
+                        </a></li>
+                    <li><a href="contact">
+                            <p class="nav-line">Contact</p>
+                            <p>お問い合わせ</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="form">
+        <form autocomplete="off">
+            <textarea class="lined" id="textarea" onkeyup="ShowLength(value);" rows="14" wrap="soft">
+                    </textarea>
+        </form>
+        <p id="input_length">0文字</p>
+    </section>
+    <div class="btns">
+        <button id="save" type="button">ファイル保存<i class="fas fa-file-export"></i></button>
+        <!-- <input id="copyTarget" type="text" value="コピー対象の文言" readonly> -->
+        <button id="copy" onclick="copyToClipboard()">クリップボードにコピー<i class="far fa-clipboard"></i></button>
+    </div>
+    <footer>
+        <p><small>&copy; copyright2021 Mkk.inc</small></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery-linedtextarea.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
