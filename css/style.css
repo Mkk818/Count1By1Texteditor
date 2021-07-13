@@ -72,7 +72,9 @@ textarea {
     width: 800px;
     box-sizing: border-box;
 }
-
+.lines {
+    height: 230px !important;
+}
 .linedwrap .codelines .lineno {
     color: #343249;
 }
@@ -138,6 +140,9 @@ footer {
 
 /* SP版 */
 @media screen and (max-width:375px) {
+    body {
+        width: 100%;
+    }
     .logo {
         margin-left: 10px;
     }
