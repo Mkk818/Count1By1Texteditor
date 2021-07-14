@@ -286,7 +286,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .linedwrap {
+        width: 350px !important;
 
+    }
     #input_length {
         margin-left: -450px;
     }
@@ -295,7 +298,9 @@ footer {
         width: 300px;
         box-sizing: border-box;
     }
-
+    textarea#textarea.lined {
+        width: 280px !important;
+    }
     .btns {
         width: 100%;
         display: flex;
