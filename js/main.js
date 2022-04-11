@@ -1,11 +1,14 @@
+// 文字数を取得
 function ShowLength(str) {
     document.getElementById("input_length").innerHTML = str.length + "文字";
     replace(/\n|\r\n/g,"");
     val= val.length;
 }
+// jQueryライブラリでテキストエリアに文字数を表示
 $(function () {
-    $('.lined').linedtextarea({
-    });
+    $('.lined').linedtextarea(
+        {selectedLine: 1}
+        );
 });
 
 
@@ -21,6 +24,8 @@ save.addEventListener("click",function(){ // 保存ボタンを押したら
   a.download = 'テキストファイル.txt' // 保存するファイル名
   document.body.appendChild(a) // リンクをDOMに追加
   a.click() // ダウンロードリンクをクリック
+  alert("ダウンロードが終了しました！");
+
 })
 // クリップボードにコピー
         function copyToClipboard() {
