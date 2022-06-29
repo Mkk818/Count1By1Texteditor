@@ -72,9 +72,11 @@ textarea {
     width: 800px;
     box-sizing: border-box;
 }
+
 .lines {
     height: 230px !important;
 }
+
 .linedwrap .codelines .lineno {
     color: #343249;
 }
@@ -143,6 +145,7 @@ footer {
     body {
         width: 100%;
     }
+
     .logo {
         margin-left: 10px;
     }
@@ -286,10 +289,12 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .linedwrap {
         width: 350px !important;
 
     }
+
     #input_length {
         margin-left: -450px;
     }
@@ -298,13 +303,29 @@ footer {
         width: 300px;
         box-sizing: border-box;
     }
+
     textarea#textarea.lined {
         width: 280px !important;
     }
+
     .btns {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .linedwrap {
+        width: 680px !important;
+    }
+
+    textarea {
+        width: 610px !important;
+    }
+
+    #input_length {
+        width: 650px;
     }
 }
