@@ -14,40 +14,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>Count 1 by 1</h1>
-            <h3>Text Editor</h3>
-        </div>
-        <div id="nav_toggle">
-            <input type="checkbox" id="btn_check">
-            <label for="btn_check" class="openbtn6"><span></span></label>
-            <div class="sp_nav">
-                <div class="logo_sp_menu">
-                    <h1>Count 1 by 1</h1>
-                    <h3>Text Editor</h3>
-                </div>
-                <ul>
-                    <li><a href="how_to.html">
-                            <p class="nav-line">How To</p>
-                            <p>使い方</p>
-                        </a></li>
-                    <li><a href="q&a.html">
-                            <p class="nav-line">Q & A</p>
-                            <p>よくある質問</p>
-                        </a></li>
-                    <li><a href="contact.html">
-                            <p class="nav-line">Contact</p>
-                            <p>お問い合わせ</p>
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header></header>
     <section class="form">
         <form autocomplete="off">
-            <textarea class="lined" id="textarea" onkeyup="ShowLength(value);" rows="14" wrap="soft">
-                    </textarea>
+            <textarea class="lined" id="textarea" onkeyup="ShowLength(value);" rows="14" wrap="soft"></textarea>
         </form>
         <p id="input_length">0文字</p>
     </section>
@@ -56,13 +26,12 @@
         <!-- <input id="copyTarget" type="text" value="コピー対象の文言" readonly> -->
         <button id="copy" onclick="copyToClipboard()">クリップボードにコピー<i class="far fa-clipboard"></i></button>
     </div>
-    <footer>
-        <p><small>&copy; copyright2021 Mkk.inc</small></p>
-    </footer>
+    <footer></footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery-linedtextarea.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/part.js"></script>
 </body>
 
 </html>
