@@ -14,16 +14,23 @@ footer {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 2px 0;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-.logo {
+/* .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px 0 10px 30px;
+    text-shadow: 2px 2px 2px #707070;
+} */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-shadow: 2px 2px 2px #707070;
 }
 
