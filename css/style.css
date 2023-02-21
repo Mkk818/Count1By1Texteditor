@@ -91,9 +91,8 @@ textarea {
 .linedwrap {
     border-radius: 10px;
 }
-
-/* 文字数カウント */
-#input_length {
+/* 改行の説明, 文字数カウント */
+.description, #input_length {
     margin: 10px 0 0 0;
     width: 800px;
     text-align: right;
@@ -302,7 +301,7 @@ footer {
 
     }
 
-    #input_length {
+    .description, #input_length {
         margin-left: -450px;
     }
 
@@ -332,7 +331,7 @@ footer {
         width: 610px !important;
     }
 
-    #input_length {
+    .description, #input_length {
         width: 650px;
     }
 }
