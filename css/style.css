@@ -322,7 +322,20 @@ footer {
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .linedwrap {
+        width: 380px !important;
+    }
+
+    textarea {
+        width: 310px !important;
+    }
+
+    .description, #input_length {
+        width: 380px;
+    }
+}
+@media screen and (min-width: 768px) {
     .linedwrap {
         width: 680px !important;
     }
