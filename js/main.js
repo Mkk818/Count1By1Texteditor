@@ -4,10 +4,6 @@ function ShowLength(str) {
  replace(/\n|\r\n/g, '');
  val = val.length;
 }
-// jQueryライブラリでテキストエリアに文字数を表示
-$(function () {
- $('.lined').linedtextarea({selectedLine: 1});
-});
 
 // ファイルの保存
 const textarea = document.querySelector('#textarea'); // テキストエリア
