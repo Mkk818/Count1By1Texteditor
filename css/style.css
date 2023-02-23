@@ -8,7 +8,6 @@ body {
 header,
 footer {
     background: #aed2cf;
-
 }
 
 /* Header */
@@ -18,14 +17,6 @@ header {
     padding: 10px 0;
 }
 
-/* .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0 10px 30px;
-    text-shadow: 2px 2px 2px #707070;
-} */
 .logo {
     display: flex;
     flex-direction: column;
@@ -76,8 +67,11 @@ header {
 }
 
 textarea {
-    width: 800px;
     box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0px 0px 0px 1px #707070;
+    padding: 3px;
 }
 
 .lines {
@@ -88,9 +82,6 @@ textarea {
     color: #343249;
 }
 
-.linedwrap {
-    border-radius: 10px;
-}
 /* 改行の説明, 文字数カウント */
 .description, #input_length {
     margin: 10px 0 0 0;
@@ -102,7 +93,7 @@ textarea {
 .btns {
     display: flex;
     justify-content: center;
-    margin: 20px 10px 20px 0;
+    margin: 20px 0;
 }
 
 
@@ -115,9 +106,9 @@ button {
     padding: 0.5em 1em;
     color: #fcfcfc;
     text-decoration: none;
-    background-color: #85B1AD;
-    border-bottom: solid 4px #6b908e;
-    box-shadow: 0px 0px 0px 5px #85B1AD;
+    background-color: #3C5D5B;
+    border-bottom: solid 4px #304a48;
+    box-shadow: 0px 0px 0px 5px #3C5D5B;
     border-radius: 3px;
     border: dashed 1px #FFF;
 }
@@ -125,10 +116,6 @@ button {
 
 button:hover {
     border: dotted 1px #FFF;
-}
-
-#save {
-    margin-right: 30px;
 }
 
 .fas,
@@ -310,10 +297,6 @@ footer {
         box-sizing: border-box;
     }
 
-    textarea#textarea.lined {
-        width: 280px !important;
-    }
-
     .btns {
         width: 100%;
         display: flex;
@@ -323,28 +306,20 @@ footer {
 }
 
 @media screen and (min-width: 376px) and (max-width: 767px) {
-    .linedwrap {
-        width: 380px !important;
-    }
-
     textarea {
-        width: 310px !important;
+        width: 360px !important;
     }
 
     .description, #input_length {
-        width: 380px;
+        width: 360px;
     }
 }
 @media screen and (min-width: 768px) {
-    .linedwrap {
-        width: 680px !important;
-    }
-
     textarea {
-        width: 610px !important;
+        width: 700px !important;
     }
 
     .description, #input_length {
-        width: 650px;
+        width: 700px;
     }
 }
