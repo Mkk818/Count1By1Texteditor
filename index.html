@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Count 1 by 1 Text Editor</title>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="css/jquery-linedtextarea.css" rel="stylesheet" />
-    <link href="css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +15,7 @@
     <header></header>
     <section class="form">
         <form autocomplete="off">
-            <textarea class="lined" id="textarea" onkeyup="ShowLength(value);" rows="14" wrap="soft"></textarea>
+            <textarea onkeyup="ShowLength(value);" rows="14" wrap="soft" placeholder="テキストを入力してください"></textarea>
         </form>
             <p class="description">Enterキーで改行</p>
             <p id="input_length">0文字</p>
@@ -27,9 +25,6 @@
         <button id="copy" onclick="copyToClipboard()">クリップボードにコピー<i class="far fa-clipboard"></i></button>
     </div>
     <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/jquery-linedtextarea.js"></script>
     <script src="js/main.js"></script>
     <script src="js/part.js"></script>
 </body>
