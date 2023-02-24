@@ -5,53 +5,44 @@
   --btn-bg-color: #3C5D5B;
   --btn-bb-color: #304a48;
   --main-txt-color: #343249;
-  --primary-font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif;
+  --primary-font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif
 }
-
 /* 全体 */
 body {
   color: var(--main-txt-color);
   background-color: var(--main-bg-color);
-  font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family)
 }
 
 header,
 footer {
-  background: var(--sub-bg-color);
+  background: var(--sub-bg-color)
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px 0
 }
-
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-shadow: 2px 2px 2px var(--shadow-color);
+  text-shadow: 2px 2px 2px var(--shadow-color)
 }
-
-/* form */
 .form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center
 }
 
 textarea {
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 1px var(--shadow-color);
-  padding: 3px;
-}
-
-.lines {
-  height: 230px !important;
+  padding: 3px
 }
 
 /* 改行の説明, 文字数カウント */
@@ -59,14 +50,14 @@ textarea {
 #input_length {
   margin: 10px 0 0 0;
   width: 800px;
-  text-align: right;
+  text-align: right
 }
 
 /* ファイル保存/コピーボタン */
 .btns {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 20px 0
 }
 
 button {
@@ -83,80 +74,70 @@ button {
   border-bottom: solid .5rem;
   box-shadow: 0px 0px 0px 5px var(--btn-bg-color);
   border-radius: .5rem;
-  border: dashed 1px var(--main-bg-color);
+  border: dashed 1px var(--main-bg-color)
 }
-
-
 button:hover {
-  border: dotted 1px var(--main-bg-color);
+  border: dotted 1px var(--main-bg-color)
 }
 
 #copy {
-  margin-left: 30px;
+  margin-left: 30px
 }
 
 footer {
   text-align: center;
-  padding: 28px 0;
+  padding: 28px 0
 }
 
 /* SP版 */
 @media screen and (max-width:375px) {
   body {
-    width: 100%;
-  }
-
-  .logo {
-    margin-left: 10px;
-  }
-
-  .logo h1 {
-    font-size: 25px;
+    width: 100%
   }
 
   .form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
   }
 
   .description,
   #input_length {
-    margin-left: -450px;
+    margin-left: -450px
   }
 
   textarea {
     width: 300px;
-    box-sizing: border-box;
+    box-sizing: border-box
   }
 
   .btns {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 0
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width:376px) and (max-width:767px) {
   textarea {
-    width: 360px !important;
+    width: 360px !important
   }
 
   .description,
   #input_length {
-    width: 360px;
+    width: 360px
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
   textarea {
-    width: 700px !important;
+    width: 700px !important
   }
 
   .description,
   #input_length {
-    width: 700px;
+    width: 700px
   }
 }
