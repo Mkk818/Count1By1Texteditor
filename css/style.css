@@ -1,325 +1,173 @@
+:root {
+  --main-bg-color: #fcfcfc;
+  --sub-bg-color: #aed2cf;
+  --shadow-color: #707070;
+  --btn-bg-color: #3C5D5B;
+  --btn-bb-color: #304a48;
+  --main-txt-color: #343249;
+
+}
+
 /* 全体 */
 body {
-    color: #343249;
-    background-color: #fcfcfc;
-    font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif;
 }
 
 header,
 footer {
-    background: #aed2cf;
+  background: var(--sub-bg-color);
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 2px #707070;
-}
-
-/* メニュー */
-
-/* ハンバーガーメニューボタンをPCで非表示 */
-#btn_check,
-.logo_sp_menu {
-    display: none;
-}
-
-#nav_toggle {
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.sp_nav ul {
-    display: flex;
-    margin-right: 10px;
-}
-
-.sp_nav ul li {
-    list-style: none;
-    margin: 0 10px;
-    text-align: center;
-    font-size: 12px;
-    text-decoration: underline #343249;
-}
-
-.sp_nav ul li a {
-    text-decoration: none;
-    color: #343249;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px var(--shadow-color);
 }
 
 /* form */
 .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 textarea {
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 1px solid #c0c0c0;
-    box-shadow: 0px 0px 0px 1px #707070;
-    padding: 3px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1px var(--shadow-color);
+  padding: 3px;
 }
 
 .lines {
-    height: 230px !important;
-}
-
-.linedwrap .codelines .lineno {
-    color: #343249;
+  height: 230px !important;
 }
 
 /* 改行の説明, 文字数カウント */
-.description, #input_length {
-    margin: 10px 0 0 0;
-    width: 800px;
-    text-align: right;
+.description,
+#input_length {
+  margin: 10px 0 0 0;
+  width: 800px;
+  text-align: right;
 }
 
 /* ファイル保存/コピーボタン */
 .btns {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 
 button {
-    width: 150px;
-    height: 40px;
-    font-size: 10px;
-    cursor: pointer;
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: #fcfcfc;
-    text-decoration: none;
-    background-color: #3C5D5B;
-    border-bottom: solid 4px #304a48;
-    box-shadow: 0px 0px 0px 5px #3C5D5B;
-    border-radius: 3px;
-    border: dashed 1px #FFF;
+  width: 150px;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  background-color: var(--btn-bg-color);
+  border-bottom: solid 4px;
+  box-shadow: 0px 0px 0px 5px var(--btn-bg-color);
+  border-radius: 3px;
+  border: dashed 1px var(--main-bg-color);
 }
 
 
 button:hover {
-    border: dotted 1px #FFF;
+  border: dotted 1px var(--main-bg-color);
 }
 
 .fas,
 .far {
-    margin-left: 10px;
-    font-size: 13px;
+  margin-left: 10px;
+  font-size: 13px;
 }
 
 #copy {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 footer {
-    text-align: center;
-    padding: 28px 0;
+  text-align: center;
+  padding: 28px 0;
 }
 
 /* SP版 */
 @media screen and (max-width:375px) {
-    body {
-        width: 100%;
-    }
+  body {
+    width: 100%;
+  }
 
-    .logo {
-        margin-left: 10px;
-    }
+  .logo {
+    margin-left: 10px;
+  }
 
-    .logo h1 {
-        font-size: 25px;
-    }
+  .logo h1 {
+    font-size: 25px;
+  }
 
-    /* ハンバーガーメニュー */
-    .openbtn6 {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        display: flex;
-        height: 50px;
-        width: 50px;
-        justify-content: center;
-        align-items: center;
-        z-index: 90;
-        background: #85B1AD;
-        border-radius: 3px;
-        box-shadow: 1px 1px 1px #1f7572;
-    }
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /*ボタン内側*/
-    .openbtn6 span,
-    .openbtn6 span:before,
-    .openbtn6 span:after {
-        content: '';
-        display: block;
-        height: 3px;
-        width: 25px;
-        border-radius: 3px;
-        background: #fff;
-        position: absolute;
-    }
+  .linedwrap {
+    width: 350px !important;
 
-    .openbtn6 span:before {
-        bottom: 8px;
-    }
+  }
 
-    .openbtn6 span:after {
-        top: 8px;
-    }
+  .description,
+  #input_length {
+    margin-left: -450px;
+  }
 
-    #btn_check:checked~.openbtn6 span {
-        background-color: rgb(255, 255, 255, 0);
-    }
+  textarea {
+    width: 300px;
+    box-sizing: border-box;
+  }
 
-    #btn_check:checked~.openbtn6 span::before {
-        bottom: 0;
-        transform: rotate(45deg);
-    }
-
-    #btn_check:checked~.openbtn6 span::after {
-        top: 0;
-        transform: rotate(-45deg);
-    }
-
-    #btn_check {
-        display: none;
-    }
-
-    /* メニュー */
-    .sp_nav {
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 100%;
-        z-index: 80;
-        background-color: #aed2cf;
-        transition: all 0.8s;
-        opacity: 0.8;
-
-    }
-
-    .logo_sp_menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
-    }
-
-    .sp_nav ul {
-        padding: 10px 10px 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sp_nav ul li {
-        list-style: none;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .sp_nav ul li a {
-        display: block;
-        width: 100%;
-        font-size: 15px;
-        box-sizing: border-box;
-        color: #343249;
-        text-decoration: none;
-        padding: 9px 15px 10px 0;
-        position: relative;
-    }
-
-    .nav-line {
-        display: flex;
-        align-items: center;
-        /* 縦位置の調整 */
-        justify-content: center;
-    }
-
-    .nav-line::before,
-    .nav-line::after {
-        content: '';
-        flex-grow: 0.05;
-        /* 余白を分け与える */
-        height: 2px;
-        background: #343249;
-    }
-
-    .nav-line::before {
-        margin-right: 8px;
-    }
-
-    .nav-line::after {
-        margin-left: 8px;
-    }
-
-    #btn_check:checked~.sp_nav {
-        left: 0;
-    }
-
-    .form {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .linedwrap {
-        width: 350px !important;
-
-    }
-
-    .description, #input_length {
-        margin-left: -450px;
-    }
-
-    textarea {
-        width: 300px;
-        box-sizing: border-box;
-    }
-
-    .btns {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
+  .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 767px) {
-    textarea {
-        width: 360px !important;
-    }
+  textarea {
+    width: 360px !important;
+  }
 
-    .description, #input_length {
-        width: 360px;
-    }
+  .description,
+  #input_length {
+    width: 360px;
+  }
 }
-@media screen and (min-width: 768px) {
-    textarea {
-        width: 700px !important;
-    }
 
-    .description, #input_length {
-        width: 700px;
-    }
+@media screen and (min-width: 768px) {
+  textarea {
+    width: 700px !important;
+  }
+
+  .description,
+  #input_length {
+    width: 700px;
+  }
 }
