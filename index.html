@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#aed2cf">
     <title>Count 1 by 1 Text Editor</title>
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=swap" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,9 +24,15 @@
         <p class="description">Enterキーで改行</p>
         <p id="input_length">0文字</p>
     </section>
-    <div class="btns">
-        <button id="save" type="button">ファイル保存<i class="fas fa-file-export"></i></button>
-        <button id="copy" onclick="copyToClipboard()">クリップボードにコピー<i class="far fa-clipboard"></i></button>
+    <div class="content">
+        <div class="btns">
+            <button id="save" type="button">Save
+                <span class="material-symbols-outlined">download</span>
+            </button>
+            <button id="copy" onclick="copyToClipboard()">Copy
+                <span class="material-symbols-outlined">file_copy</span>
+            </button>
+        </div>
     </div>
     <footer></footer>
     <script src="js/main.js"></script>
