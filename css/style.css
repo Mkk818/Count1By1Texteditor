@@ -47,6 +47,7 @@
   border-color:var(--shadow-color);
   box-shadow:0 0 0 1px var(--shadow-color);
   padding:3px;
+  outline-color: var(--sub-bg-color);
   color:var(--btn-bg-color)
   }
 
