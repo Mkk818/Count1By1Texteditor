@@ -1,156 +1,149 @@
 :root {
-  --main-bg-color: #fcfcfc;
-  --sub-bg-color: #c7e6e9;
-  --shadow-color: #ecacae;
-  --btn-bg-color: #642C66;
-  --btn-bb-color: #502351;
-  --main-txt-color: #343249;
-  --primary-font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif
-}
+  --main-bg-color:#fcfcfc;
+  --sub-bg-color:#c7e6e9;
+  --shadow-color:#ecacae;
+  --btn-bg-color:#642C66;
+  --btn-bb-color:#502351;
+  --main-txt-color:#343249;
+  --primary-font-family:'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ Ｐ明朝','MS PMincho',sans-serif
+  }
 
-/* 全体 */
-body {
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
-  font-family: var(--primary-font-family)
-}
-
-header,
-footer {
-  background: var(--sub-bg-color)
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0
-}
-
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-}
-
-a {
-  color: var(--btn-bg-color);
-}
-
-.form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-
-textarea {
-  box-sizing: border-box;
-  border-radius: 10px;
-  border-color: var(--shadow-color);
-  box-shadow: 0px 0px 0px 1px var(--shadow-color);
-  padding: 3px;
-  color: var(--btn-bg-color)
-}
-
-/* 改行の説明, 文字数カウント */
-.description,
-#input_length {
-  margin: 10px 0 0 0;
-  width: 800px;
-  text-align: right
-}
-
-/* ファイル保存/コピーボタン */
-.btns {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0
-}
-
-button {
-  width: 120px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: var(--main-bg-color);
-  text-decoration: none;
-  background-color: var(--btn-bg-color);
-  border-bottom: solid .5rem;
-  box-shadow: 0px 0px 0px 5px var(--btn-bg-color);
-  border-radius: .5rem;
-  border: dashed 1px var(--main-bg-color)
-}
-
-button:hover {
-  border: dotted 1px var(--main-bg-color)
-}
-
-#copy {
-  margin-left: 30px
-}
-
-/* SP版 */
-@media screen and (max-width:375px) {
   body {
-    width: 100%
+  color:var(--main-txt-color);
+  background-color:var(--main-bg-color);
+  font-family:var(--primary-font-family)
+  }
+
+  header,footer {
+  background:var(--sub-bg-color)
+  }
+
+  header {
+  display:flex;
+  justify-content:center;
+  padding:10px 0
+  }
+
+  footer {
+  width:100%;
+  text-align:center;
+  padding:20px 0
+  }
+
+  a {
+  color:var(--btn-bg-color)
   }
 
   .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
-  }
-
-  .description,
-  #input_length {
-    margin-left: -450px
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center
   }
 
   textarea {
-    width: 300px;
-    box-sizing: border-box
+  box-sizing:border-box;
+  border-radius:10px;
+  border-color:var(--shadow-color);
+  box-shadow:0 0 0 1px var(--shadow-color);
+  padding:3px;
+  color:var(--btn-bg-color)
+  }
+
+  .description,#input_length {
+  margin:10px 0 0;
+  width:800px;
+  text-align:right
   }
 
   .btns {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0
+  display:flex;
+  justify-content:center;
+  margin:20px 0
   }
-}
 
-@media screen and (min-width:376px) and (max-width:767px) {
+  button {
+  width:120px;
+  height:40px;
+  font-size:20px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  color:var(--main-bg-color);
+  text-decoration:none;
+  background-color:var(--btn-bg-color);
+  border-bottom:solid .5rem;
+  box-shadow:0 0 0 5px var(--btn-bg-color);
+  border-radius:.5rem;
+  border:dashed 1px var(--main-bg-color)
+  }
+
+  button:hover {
+  border:dotted 1px var(--main-bg-color)
+  }
+
+  #copy {
+  margin-left:30px
+  }
+
+  @media screen and (max-width:375px) {
+  body {
+  width:100%
+  }
+
+  .form {
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center
+  }
+
+  .description,#input_length {
+  margin-left:-450px
+  }
+
   textarea {
-    width: 360px !important
+  width:300px;
+  box-sizing:border-box
   }
-  footer {
-    position: fixed;
-    height: 35vh;
-    padding-top: 40px;
-  }
-  .description,
-  #input_length {
-    width: 360px
-  }
-}
 
-@media screen and (min-width:768px) {
+  .btns {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin:20px 0
+  }
+  }
+
+  @media screen and (min-width:376px) and (max-width:767px) {
   textarea {
-    width: 700px !important
+  width:360px!important
   }
 
   footer {
-    position: fixed;
-    height: 35vh;
-    padding-top: 40px;
+  position:fixed;
+  height:35vh;
+  padding-top:40px
   }
 
-  .description,
-  #input_length {
-    width: 700px
+  .description,#input_length {
+  width:360px
   }
-}
+  }
+
+  @media screen and (min-width:768px) {
+  textarea {
+  width:700px!important
+  }
+
+  footer {
+  position:fixed;
+  height:35vh;
+  padding-top:40px
+  }
+
+  .description,#input_length {
+  width:700px
+  }
+  }
