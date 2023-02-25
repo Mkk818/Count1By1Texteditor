@@ -127,7 +127,11 @@ button:hover {
   textarea {
     width: 360px !important
   }
-
+  footer {
+    position: fixed;
+    height: 35vh;
+    padding-top: 40px;
+  }
   .description,
   #input_length {
     width: 360px
