@@ -7,6 +7,7 @@
   --main-txt-color: #343249;
   --primary-font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif
 }
+
 /* 全体 */
 body {
   color: var(--main-txt-color);
@@ -24,6 +25,7 @@ header {
   justify-content: center;
   padding: 10px 0
 }
+
 footer {
   width: 100%;
   text-align: center;
@@ -81,6 +83,7 @@ button {
   border-radius: .5rem;
   border: dashed 1px var(--main-bg-color)
 }
+
 button:hover {
   border: dotted 1px var(--main-bg-color)
 }
@@ -135,10 +138,12 @@ button:hover {
   textarea {
     width: 700px !important
   }
+
   footer {
     position: fixed;
-    height: 142px;
-    }
+    height: 35vh;
+    padding-top: 40px;
+  }
 
   .description,
   #input_length {
