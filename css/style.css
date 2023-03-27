@@ -108,58 +108,61 @@ button > .material-symbols-outlined {
 /* SP版 */
 @media screen and (max-width:375px) {
   body {
-    width: 100%
+  width:100%
   }
 
   .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center
   }
 
-  .description,
-  #input_length {
-    margin-left: -450px
+  .description,#input_length {
+  margin-left:-450px
   }
 
   textarea {
-    width: 300px;
-    box-sizing: border-box
+  width:300px;
+  box-sizing:border-box
   }
 
   .btns {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin:20px 0
   }
-}
+  }
 
-@media screen and (min-width:376px) and (max-width:767px) {
+  @media screen and (min-width:376px) and (max-width:767px) {
   textarea {
-    width: 360px !important
-  }
-
-  .description,
-  #input_length {
-    width: 360px
-  }
-}
-
-@media screen and (min-width:768px) {
-  textarea {
-    width: 700px !important
+  width:360px!important
   }
 
   footer {
-    position: fixed;
-    height: 35vh;
-    padding-top: 40px;
+  position:fixed;
+  height:35vh;
+  padding-top:40px
   }
 
-  .description,
-  #input_length {
-    width: 700px
+  .description,#input_length {
+  width:360px
   }
-}
+  }
+
+  @media screen and (min-width:768px) {
+  textarea {
+  width:700px!important
+  }
+
+  footer {
+  position:fixed;
+  height:35vh;
+  padding-top:40px
+  }
+
+  .description,#input_length {
+  width:700px
+  }
+  }
