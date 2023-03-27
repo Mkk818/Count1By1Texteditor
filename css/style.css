@@ -1,94 +1,112 @@
 :root {
-  --main-bg-color:#fcfcfc;
-  --sub-bg-color:#c7e6e9;
-  --shadow-color:#ecacae;
-  --btn-bg-color:#642C66;
-  --btn-bb-color:#502351;
-  --main-txt-color:#343249;
-  --primary-font-family:'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ Ｐ明朝','MS PMincho',sans-serif
-  }
+  --main-bg-color: #fcfcfc;
+  --main-shadow-color: #f4f4f4;
+  --sub-bg-color: #c7e6e9;
+  --shadow-color: #ecacae;
+  --btn-bg-color: #642C66;
+  --btn-bg-right-color: #835684;
+  --btn-bg-accent-color: #98439b;
+  --btn-bb-color: #502351;
+  --main-txt-color: #343249;
+  --primary-font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif
+}
 
-  body {
-  color:var(--main-txt-color);
-  background-color:var(--main-bg-color);
-  font-family:var(--primary-font-family)
-  }
+/* 全体 */
+body {
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  font-family: var(--primary-font-family)
+}
 
-  header,footer {
-  background:var(--sub-bg-color)
-  }
+header,
+footer {
+  background: var(--sub-bg-color)
+}
 
-  header {
-  display:flex;
-  justify-content:center;
-  padding:10px 0
-  }
+header {
+  box-shadow: 0 8px 8px 0 var(--main-shadow-color);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0
+}
 
-  footer {
-  width:100%;
-  text-align:center;
-  padding:20px 0
-  }
+footer {
+  box-shadow: inset 0 2px 2px 0 var(--main-shadow-color);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0
+}
 
-  a {
-  color:var(--btn-bg-color)
-  }
+a {
+  color: var(--btn-bg-color);
+}
 
-  .form {
-  margin-top:20px;
-  display:flex;
-  flex-direction:column;
-  align-items:center
-  }
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
 
-  textarea {
-  box-sizing:border-box;
-  border-radius:10px;
-  border-color:var(--shadow-color);
-  box-shadow:0 0 0 1px var(--shadow-color);
-  padding:3px;
-  outline-color: var(--sub-bg-color);
-  color:var(--btn-bg-color)
-  }
+textarea {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-color: var(--shadow-color);
+  box-shadow: 0px 0px 0px 1px var(--shadow-color);
+  padding: 3px
+}
 
-  .description,#input_length {
-  margin:10px 0 0;
-  width:800px;
-  text-align:right
-  }
+/* 改行の説明, 文字数カウント */
+.description,
+#input_length {
+  margin: 10px 0 0 0;
+  width: 800px;
+  text-align: right
+}
 
-  .btns {
-  display:flex;
-  justify-content:center;
-  margin:20px 0
-  }
+/* ファイル保存/コピーボタン */
+.btns {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0
+}
 
-  button {
-  width:120px;
-  height:40px;
-  font-size:20px;
-  cursor:pointer;
-  display:flex;
-  justify-content:space-evenly;
-  align-items:center;
-  color:var(--main-bg-color);
-  text-decoration:none;
-  background-color:var(--btn-bg-color);
-  border-bottom:solid .5rem;
-  box-shadow:0 0 0 5px var(--btn-bg-color);
-  border-radius:.5rem;
-  border:dashed 1px var(--main-bg-color)
-  }
+button {
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  background: var(--btn-bg-color);
+  border-bottom: solid .5rem;
+  box-shadow: 0px 0px 0px 5px var(--btn-bg-right-color),
+  6px 6px 6px 0 var(--btn-bb-color),
+  inset 6px 6px 12px 0 var(--btn-bg-right-color),
+  inset 6px 6px 12px 0 var(--btn-bg-accent-color),
+  inset -12px -12px 24px 0 var(--btn-bb-color);
+  border-radius: 2.7rem;
+  padding: 1.2rem 3.8rem;
+  border: dashed 2px var(--main-bg-color)
+}
 
-  button:hover {
-  border:dotted 1px var(--main-bg-color)
-  }
+button:hover {
+  border: dotted 2px var(--main-bg-color)
+}
 
-  #copy {
-  margin-left:30px
-  }
+#copy {
+  margin-left: 50px
+}
 
-  @media screen and (max-width:375px) {
+button > .material-symbols-outlined {
+  padding-left: 10px;
+}
+
+/* SP版 */
+@media screen and (max-width:375px) {
   body {
   width:100%
   }
