@@ -8,11 +8,10 @@ https://count1by1texteditor.netlify.app/
 - ワンクリックでクリップボードコピーとtxtファイルとして保存も可能です(保存先はダウンロードフォルダ)
 
 ## 参考にしたサイト
-- ハンバーガーメニュー内の文字装飾</br>
-[見出しの両サイドに横棒を配置する方法 | ゆんつてっく](https://yuntu-tek.com/title-horizontal-bar/)
-- textarea左に文字列を表示(jQuery)</br>
+~~- textarea左に文字列を表示(jQuery)</br> 
 [<textarea> に行番号をつける : まだプログラマーですが何か？](http://dotnsf.blog.jp/archives/1077459283.html)</br>
-GitHub：[jquery-linedtextarea](https://github.com/cotenoni/jquery-linedtextarea)</br>
+GitHub：[jquery-linedtextarea](https://github.com/cotenoni/jquery-linedtextarea)~~</br>
+⇑2023/02/23にjQueryの使用を取りやめました。
 - 外部ファイル保存(テキストファイル)</br>
 [【ゼロからはじめるプログラミング】JavaScript学習 #38 | hyperT'sブログ](https://hyperts.net/how-to-program-javascript38/)</br>
 - テキスト入力欄の文字数をリアルタイム表示</br>
